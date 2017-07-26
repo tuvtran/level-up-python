@@ -1,0 +1,15 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Card	../FrenchDeck.py	/^Card = collections.namedtuple('Card', ['rank', 'suit'])$/;"	kind:variable	line:3
+FrenchDeck	../FrenchDeck.py	/^class FrenchDeck(object):$/;"	kind:class	line:6
+FrenchDeck.py	../FrenchDeck.py	1;"	kind:file	line:1
+__getitem__	../FrenchDeck.py	/^    def __getitem__(self, position):$/;"	kind:member	line:17
+__init__	../FrenchDeck.py	/^    def __init__(self):$/;"	kind:member	line:10
+__len__	../FrenchDeck.py	/^    def __len__(self):$/;"	kind:member	line:14
+collections	../FrenchDeck.py	/^import collections$/;"	kind:namespace	line:1
+ranks	../FrenchDeck.py	/^    ranks = [str(n) for n in range(2, 11)] + list('JQKA')$/;"	kind:variable	line:7
+suits	../FrenchDeck.py	/^    suits = 'spades diamonds clubs hearts'.split()$/;"	kind:variable	line:8
