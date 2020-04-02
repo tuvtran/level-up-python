@@ -4,7 +4,6 @@ import operator as op
 from collections import deque
 
 Symbol = str
-List = list
 Number = typing.Union[int, float]
 Atom = typing.Union[Symbol, Number]
 Exp = typing.List[typing.Union[Atom, 'Exp']]
@@ -24,7 +23,7 @@ class Env(dict):
         return self if (var in self) else self.outer.find(var)
 
 
-def tokenize(chars: str) -> typing.List[str]:
+def tokenize(chars: str) -> list:
     "Convert a string of characters to a list of tokens"
     return chars.replace('(', ' ( ').replace(')', ' ) ').split()
 
@@ -88,8 +87,8 @@ def standard_env() -> Env:
         'expt': pow,
         'equal?': op.eq,
         'length': len,
-        'list': lambda *x: List(x),
-        'list?': lambda x: isinstance(x, List),
+        'list': lambda *x: list(x),
+        'list?': lambda x: isinstance(x, list),
         'map': map,
         'max': max,
         'min': min,
